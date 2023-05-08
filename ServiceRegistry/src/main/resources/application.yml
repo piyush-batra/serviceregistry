@@ -1,0 +1,14 @@
+server:
+  port: 8761
+  
+eureka:
+  server:
+    enable-self-preservation: true
+    expected-client-renewal-interval-seconds: 5
+  instance:
+    lease-expiration-duration-in-seconds: 5
+    hostname: localhost
+    
+  client:
+    register-with-eureka: false
+    fetch-registry: false
